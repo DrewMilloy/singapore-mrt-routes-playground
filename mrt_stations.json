@@ -1,0 +1,1464 @@
+[
+  {
+    "lines": [
+      "NS1",
+      "EW24"
+    ],
+    "en": "Jurong East",
+    "zh": "裕廊东",
+    "ta": "ஜூரோங் கிழக்கு",
+    "abbr": "JUR"
+  },
+  {
+    "lines": [
+      "NS2"
+    ],
+    "en": "Bukit Batok",
+    "zh": "武吉巴督",
+    "ta": "புக்கிட் பாத்தோக்",
+    "abbr": "BBT"
+  },
+  {
+    "lines": [
+      "NS3"
+    ],
+    "en": "Bukit Gombak",
+    "zh": "武吉甘柏",
+    "ta": "புக்கிட் கோம்பாக்",
+    "abbr": "BGB"
+  },
+  {
+    "lines": [
+      "NS4",
+      "BP1"
+    ],
+    "en": "Choa Chu Kang",
+    "zh": "蔡厝港",
+    "ta": "சுவா சூ காங்",
+    "abbr": "CCK"
+  },
+  {
+    "lines": [
+      "NS5"
+    ],
+    "en": "Yew Tee",
+    "zh": "油池",
+    "ta": "இயூ டீ",
+    "abbr": "YWT"
+  },
+  {
+    "lines": [
+      "NS7"
+    ],
+    "en": "Kranji",
+    "zh": "克兰芝",
+    "ta": "கிராஞ்சி",
+    "abbr": "KRJ"
+  },
+  {
+    "lines": [
+      "NS8"
+    ],
+    "en": "Marsiling",
+    "zh": "马西岭",
+    "ta": "மார்சிலிங்",
+    "abbr": "MSL"
+  },
+  {
+    "lines": [
+      "NS9"
+    ],
+    "en": "Woodlands",
+    "zh": "兀兰",
+    "ta": "ஊட்லண்ட்ஸ்",
+    "abbr": "WDL"
+  },
+  {
+    "lines": [
+      "NS10"
+    ],
+    "en": "Admiralty",
+    "zh": "海军部",
+    "ta": "அட்மிரல்ட்டி",
+    "abbr": "ADM"
+  },
+  {
+    "lines": [
+      "NS11"
+    ],
+    "en": "Sembawang",
+    "zh": "三巴旺",
+    "ta": "செம்பாவாங்",
+    "abbr": "SBW"
+  },
+  {
+    "lines": [
+      "NS13"
+    ],
+    "en": "Yishun",
+    "zh": "义顺",
+    "ta": "யீஷூன்",
+    "abbr": "YIS"
+  },
+  {
+    "lines": [
+      "NS14"
+    ],
+    "en": "Khatib",
+    "zh": "卡迪",
+    "ta": "காதிப்",
+    "abbr": "KTB"
+  },
+  {
+    "lines": [
+      "NS15"
+    ],
+    "en": "Yio Chu Kang",
+    "zh": "杨厝港",
+    "ta": "இயோ சூ காங்",
+    "abbr": "YCK"
+  },
+  {
+    "lines": [
+      "NS16"
+    ],
+    "en": "Ang Mo Kio",
+    "zh": "宏茂桥",
+    "ta": "அங் மோ கியோ",
+    "abbr": "AMK"
+  },
+  {
+    "lines": [
+      "NS17",
+      "CC15"
+    ],
+    "en": "Bishan",
+    "zh": "碧山",
+    "ta": "பீஷான்",
+    "abbr": "BSH"
+  },
+  {
+    "lines": [
+      "NS18"
+    ],
+    "en": "Braddell",
+    "zh": "布莱德",
+    "ta": "பிரேடல்",
+    "abbr": "BDL"
+  },
+  {
+    "lines": [
+      "NS19"
+    ],
+    "en": "Toa Payoh",
+    "zh": "大巴窑",
+    "ta": "தோ பாயோ",
+    "abbr": "TAP"
+  },
+  {
+    "lines": [
+      "NS20"
+    ],
+    "en": "Novena",
+    "zh": "诺维娜",
+    "ta": "நொவீனா",
+    "abbr": "NOV"
+  },
+  {
+    "lines": [
+      "NS21",
+      "DT11"
+    ],
+    "en": "Newton",
+    "zh": "纽顿",
+    "ta": "நியூட்டன்",
+    "abbr": "NEW"
+  },
+  {
+    "lines": [
+      "NS22"
+    ],
+    "en": "Orchard",
+    "zh": "乌节",
+    "ta": "ஆர்ச்சர்ட்",
+    "abbr": "ORC"
+  },
+  {
+    "lines": [
+      "NS23"
+    ],
+    "en": "Somerset",
+    "zh": "索美塞",
+    "ta": "சாமர்செட்",
+    "abbr": "SOM"
+  },
+  {
+    "lines": [
+      "NS24",
+      "NE6",
+      "CC1"
+    ],
+    "en": "Dhoby Ghaut",
+    "zh": "多美歌",
+    "ta": "டோபி காட்",
+    "abbr": "DBG"
+  },
+  {
+    "lines": [
+      "NS25",
+      "EW13"
+    ],
+    "en": "City Hall",
+    "zh": "政府大厦",
+    "ta": "நகர மண்டபம்",
+    "abbr": "CTH"
+  },
+  {
+    "lines": [
+      "NS26",
+      "EW14"
+    ],
+    "en": "Raffles Place",
+    "zh": "莱佛士坊",
+    "ta": "ராஃபிள்ஸ் பிளேஸ்",
+    "abbr": "RFP"
+  },
+  {
+    "lines": [
+      "NS27",
+      "CE2"
+    ],
+    "en": "Marina Bay",
+    "zh": "滨海湾",
+    "ta": "மரீனா பே",
+    "abbr": "MRB"
+  },
+  {
+    "lines": [
+      "NS28"
+    ],
+    "en": "Marina South Pier",
+    "zh": "滨海南码头",
+    "ta": "மரினா சவுத் படகுத்துறை",
+    "abbr": "MSP"
+  },
+  {
+    "lines": [
+      "EW1"
+    ],
+    "en": "Pasir Ris",
+    "zh": "巴西立",
+    "ta": "பாசிர் ரிஸ்",
+    "abbr": "PSR"
+  },
+  {
+    "lines": [
+      "EW2",
+      "DT32"
+    ],
+    "en": "Tampines",
+    "zh": "淡滨尼",
+    "ta": "தெம்பினிஸ்",
+    "abbr": "TAM"
+  },
+  {
+    "lines": [
+      "EW3"
+    ],
+    "en": "Simei",
+    "zh": "四美",
+    "ta": "ஸீமெய்",
+    "abbr": "SIM"
+  },
+  {
+    "lines": [
+      "EW4",
+      "CG"
+    ],
+    "en": "Tanah Merah",
+    "zh": "丹那美拉",
+    "ta": "தானா மேரா",
+    "abbr": "TNM"
+  },
+  {
+    "lines": [
+      "EW5"
+    ],
+    "en": "Bedok",
+    "zh": "勿洛",
+    "ta": "பிடோக்",
+    "abbr": "BDK"
+  },
+  {
+    "lines": [
+      "EW6"
+    ],
+    "en": "Kembangan",
+    "zh": "景万岸",
+    "ta": "கெம்பாங்கான்",
+    "abbr": "KEM"
+  },
+  {
+    "lines": [
+      "EW7"
+    ],
+    "en": "Eunos",
+    "zh": "友诺士",
+    "ta": "யூனுஸ்",
+    "abbr": "EUN"
+  },
+  {
+    "lines": [
+      "EW8",
+      "CC9"
+    ],
+    "en": "Paya Lebar",
+    "zh": "巴耶利峇",
+    "ta": "பாய லேபார்",
+    "abbr": "PYL"
+  },
+  {
+    "lines": [
+      "EW9"
+    ],
+    "en": "Aljunied",
+    "zh": "阿裕尼",
+    "ta": "அல்ஜூனிட்",
+    "abbr": "ALJ"
+  },
+  {
+    "lines": [
+      "EW10"
+    ],
+    "en": "Kallang",
+    "zh": "加冷",
+    "ta": "காலாங்",
+    "abbr": "KAL"
+  },
+  {
+    "lines": [
+      "EW11"
+    ],
+    "en": "Lavender",
+    "zh": "劳明达",
+    "ta": "லவண்டர்",
+    "abbr": "LVR"
+  },
+  {
+    "lines": [
+      "EW12",
+      "DT14"
+    ],
+    "en": "Bugis",
+    "zh": "武吉士",
+    "ta": "பூகிஸ்",
+    "abbr": "BGS"
+  },
+  {
+    "lines": [
+      "EW13",
+      "NS25"
+    ],
+    "en": "City Hall",
+    "zh": "政府大厦",
+    "ta": "நகர மண்டபம்",
+    "abbr": "CTH"
+  },
+  {
+    "lines": [
+      "EW14",
+      "NS26"
+    ],
+    "en": "Raffles Place",
+    "zh": "莱佛士坊",
+    "ta": "ராஃபிள்ஸ் பிளேஸ்",
+    "abbr": "RFP"
+  },
+  {
+    "lines": [
+      "EW15"
+    ],
+    "en": "Tanjong Pagar",
+    "zh": "丹戎巴葛",
+    "ta": "தஞ்சோங் பகார்",
+    "abbr": "TPG"
+  },
+  {
+    "lines": [
+      "EW16",
+      "NE3"
+    ],
+    "en": "Outram Park",
+    "zh": "欧南园",
+    "ta": "ஊட்ரம் பார்க்",
+    "abbr": "OTP"
+  },
+  {
+    "lines": [
+      "EW17"
+    ],
+    "en": "Tiong Bahru",
+    "zh": "中峇鲁",
+    "ta": "தியோங் பாரு",
+    "abbr": "TIB"
+  },
+  {
+    "lines": [
+      "EW18"
+    ],
+    "en": "Redhill",
+    "zh": "红山",
+    "ta": "ரெட்ஹில்",
+    "abbr": "RDH"
+  },
+  {
+    "lines": [
+      "EW19"
+    ],
+    "en": "Queenstown",
+    "zh": "女皇镇",
+    "ta": "குவீன்ஸ்டவுன்",
+    "abbr": "QUE"
+  },
+  {
+    "lines": [
+      "EW20"
+    ],
+    "en": "Commonwealth",
+    "zh": "联邦",
+    "ta": "காமன்வெல்த்",
+    "abbr": "COM"
+  },
+  {
+    "lines": [
+      "EW21",
+      "CC22"
+    ],
+    "en": "Buona Vista",
+    "zh": "波那维斯达",
+    "ta": "புவன விஸ்தா",
+    "abbr": "BNV"
+  },
+  {
+    "lines": [
+      "EW22"
+    ],
+    "en": "Dover",
+    "zh": "杜弗",
+    "ta": "டோவெர்",
+    "abbr": "DVR"
+  },
+  {
+    "lines": [
+      "EW23"
+    ],
+    "en": "Clementi",
+    "zh": "金文泰",
+    "ta": "கிளிமெண்டி",
+    "abbr": "CLE"
+  },
+  {
+    "lines": [
+      "EW24",
+      "NS1"
+    ],
+    "en": "Jurong East",
+    "zh": "裕廊东",
+    "ta": "ஜூரோங் கிழக்கு",
+    "abbr": "JUR"
+  },
+  {
+    "lines": [
+      "EW25"
+    ],
+    "en": "Chinese Garden",
+    "zh": "裕华园",
+    "ta": "சீனத் தோட்டம்",
+    "abbr": "CNG"
+  },
+  {
+    "lines": [
+      "EW26"
+    ],
+    "en": "Lakeside",
+    "zh": "湖畔",
+    "ta": "ஏரிக்கரை",
+    "abbr": "LKS"
+  },
+  {
+    "lines": [
+      "EW27"
+    ],
+    "en": "Boon Lay",
+    "zh": "文礼",
+    "ta": "பூன் லே",
+    "abbr": "BNL"
+  },
+  {
+    "lines": [
+      "EW28"
+    ],
+    "en": "Pioneer",
+    "zh": "先驱",
+    "ta": "பயனியர்",
+    "abbr": "PNR"
+  },
+  {
+    "lines": [
+      "EW29"
+    ],
+    "en": "Joo Koon",
+    "zh": "裕群",
+    "ta": "ஜூ கூன்",
+    "abbr": "JKN"
+  },
+  {
+    "lines": [
+      "EW30"
+    ],
+    "en": "Gul Circle",
+    "zh": "卡尔圈",
+    "ta": "கல் சர்க்கல்",
+    "abbr": "GCL"
+  },
+  {
+    "lines": [
+      "EW31"
+    ],
+    "en": "Tuas Crescent",
+    "zh": "大士弯",
+    "ta": "துவாஸ் கிரசண்ட்",
+    "abbr": "TCR"
+  },
+  {
+    "lines": [
+      "EW32"
+    ],
+    "en": "Tuas West Road",
+    "zh": "大士西路",
+    "ta": "துவாஸ் வெஸ்ட் ரோடு",
+    "abbr": "TWR"
+  },
+  {
+    "lines": [
+      "EW33"
+    ],
+    "en": "Tuas Link",
+    "zh": "大士连路",
+    "ta": "துவாஸ் லிங்க்",
+    "abbr": "TLK"
+  },
+  {
+    "lines": [
+      "CG1",
+      "DT35"
+    ],
+    "en": "Expo",
+    "zh": "博览",
+    "ta": "எக்ஸ்போ",
+    "abbr": "XPO"
+  },
+  {
+    "lines": [
+      "CG2"
+    ],
+    "en": "Changi Airport",
+    "zh": "樟宜机场",
+    "ta": "சாங்கி விமானநிலையம்",
+    "abbr": "CGA"
+  },
+  {
+    "lines": [
+      "NE1",
+      "CC29"
+    ],
+    "en": "HarbourFront",
+    "zh": "港湾",
+    "ta": "துறைமுகம்",
+    "abbr": "HBF"
+  },
+  {
+    "lines": [
+      "NE3",
+      "EW16"
+    ],
+    "en": "Outram Park",
+    "zh": "欧南园",
+    "ta": "ஊட்ரம் பார்க்",
+    "abbr": "OTP"
+  },
+  {
+    "lines": [
+      "NE4",
+      "DT19"
+    ],
+    "en": "Chinatown",
+    "zh": "牛车水",
+    "ta": "சைனாடவுன்",
+    "abbr": "CNT"
+  },
+  {
+    "lines": [
+      "NE5"
+    ],
+    "en": "Clarke Quay",
+    "zh": "克拉码头",
+    "ta": "கிளார்க் கீ",
+    "abbr": "CQY"
+  },
+  {
+    "lines": [
+      "NE6",
+      "NS24",
+      "CC1"
+    ],
+    "en": "Dhoby Ghaut",
+    "zh": "多美歌",
+    "ta": "டோபி காட்",
+    "abbr": "DBG"
+  },
+  {
+    "lines": [
+      "NE7",
+      "DT12"
+    ],
+    "en": "Little India",
+    "zh": "小印度",
+    "ta": "லிட்டில் இந்தியா",
+    "abbr": "LTI"
+  },
+  {
+    "lines": [
+      "NE8"
+    ],
+    "en": "Farrer Park",
+    "zh": "花拉公园",
+    "ta": "ஃபேரர் பார்க்",
+    "abbr": "FRP"
+  },
+  {
+    "lines": [
+      "NE9"
+    ],
+    "en": "Boon Keng",
+    "zh": "文庆",
+    "ta": "பூன் கெங்",
+    "abbr": "BNK"
+  },
+  {
+    "lines": [
+      "NE10"
+    ],
+    "en": "Potong Pasir",
+    "zh": "波东巴西",
+    "ta": "போத்தோங் பாசிர்",
+    "abbr": "PTP"
+  },
+  {
+    "lines": [
+      "NE11"
+    ],
+    "en": "Woodleigh",
+    "zh": "兀里",
+    "ta": "உட்லீ",
+    "abbr": "WLH"
+  },
+  {
+    "lines": [
+      "NE12",
+      "CC13"
+    ],
+    "en": "Serangoon",
+    "zh": "实龙岗",
+    "ta": "சிராங்கூன்",
+    "abbr": "SER"
+  },
+  {
+    "lines": [
+      "NE13"
+    ],
+    "en": "Kovan",
+    "zh": "高文",
+    "ta": "கோவன்",
+    "abbr": "KVN"
+  },
+  {
+    "lines": [
+      "NE14"
+    ],
+    "en": "Hougang",
+    "zh": "后港",
+    "ta": "ஹவ்காங்",
+    "abbr": "HGN"
+  },
+  {
+    "lines": [
+      "NE15"
+    ],
+    "en": "Buangkok",
+    "zh": "万国",
+    "ta": "புவாங்கோக்",
+    "abbr": "BGK"
+  },
+  {
+    "lines": [
+      "NE16",
+      "STC"
+    ],
+    "en": "Sengkang",
+    "zh": "盛港",
+    "ta": "செங்காங்",
+    "abbr": "SKG"
+  },
+  {
+    "lines": [
+      "NE17",
+      "PTC"
+    ],
+    "en": "Punggol",
+    "zh": "榜鹅",
+    "ta": "பொங்கோல்",
+    "abbr": "PGL"
+  },
+  {
+    "lines": [
+      "CC1",
+      "NS24",
+      "NE6"
+    ],
+    "en": "Dhoby Ghaut",
+    "zh": "多美歌",
+    "ta": "டோபி காட்",
+    "abbr": "DBG"
+  },
+  {
+    "lines": [
+      "CC2"
+    ],
+    "en": "Bras Basah",
+    "zh": "百胜",
+    "ta": "பிராஸ் பாசா",
+    "abbr": "BBS"
+  },
+  {
+    "lines": [
+      "CC3"
+    ],
+    "en": "Esplanade",
+    "zh": "滨海中心",
+    "ta": "எஸ்பிளனேட்",
+    "abbr": "EPN"
+  },
+  {
+    "lines": [
+      "CC4",
+      "DT15",
+      "CE"
+    ],
+    "en": "Promenade",
+    "zh": "宝门廊",
+    "ta": "புரொமனாட்",
+    "abbr": "PMN"
+  },
+  {
+    "lines": [
+      "CC5"
+    ],
+    "en": "Nicoll Highway",
+    "zh": "尼诰大道",
+    "ta": "நிக்கல் நெடுஞ்சாலை",
+    "abbr": "NCH"
+  },
+  {
+    "lines": [
+      "CC6"
+    ],
+    "en": "Stadium",
+    "zh": "体育场",
+    "ta": "ஸ்டேடியம்",
+    "abbr": "SDM"
+  },
+  {
+    "lines": [
+      "CC7"
+    ],
+    "en": "Mountbatten",
+    "zh": "蒙巴登",
+    "ta": "மவுண்ட்பேட்டன்",
+    "abbr": "MBT"
+  },
+  {
+    "lines": [
+      "CC8"
+    ],
+    "en": "Dakota",
+    "zh": "达科达",
+    "ta": "டகோட்டா",
+    "abbr": "DKT"
+  },
+  {
+    "lines": [
+      "CC9",
+      "EW8"
+    ],
+    "en": "Paya Lebar",
+    "zh": "巴耶利峇",
+    "ta": "பாய லேபார்",
+    "abbr": "PYL"
+  },
+  {
+    "lines": [
+      "CC10",
+      "DT26"
+    ],
+    "en": "MacPherson",
+    "zh": "麦波申",
+    "ta": "மெக்பர்சன்",
+    "abbr": "MPS"
+  },
+  {
+    "lines": [
+      "CC11"
+    ],
+    "en": "Tai Seng",
+    "zh": "大成",
+    "ta": "தை செங்",
+    "abbr": "TSG"
+  },
+  {
+    "lines": [
+      "CC12"
+    ],
+    "en": "Bartley",
+    "zh": "巴特礼",
+    "ta": "பார்ட்லி",
+    "abbr": "BLY"
+  },
+  {
+    "lines": [
+      "CC13",
+      "NE12"
+    ],
+    "en": "Serangoon",
+    "zh": "实龙岗",
+    "ta": "சிராங்கூன்",
+    "abbr": "SER"
+  },
+  {
+    "lines": [
+      "CC14"
+    ],
+    "en": "Lorong Chuan",
+    "zh": "罗弄泉",
+    "ta": "லோரோங் சுவான்",
+    "abbr": "LRC"
+  },
+  {
+    "lines": [
+      "CC15",
+      "NS17"
+    ],
+    "en": "Bishan",
+    "zh": "碧山",
+    "ta": "பீஷான்",
+    "abbr": "BSH"
+  },
+  {
+    "lines": [
+      "CC16"
+    ],
+    "en": "Marymount",
+    "zh": "玛丽蒙",
+    "ta": "மேரிமவுண்ட்",
+    "abbr": "MRM"
+  },
+  {
+    "lines": [
+      "CC17"
+    ],
+    "en": "Caldecott",
+    "zh": "加利谷",
+    "ta": "கால்டிகாட்",
+    "abbr": "CDT"
+  },
+  {
+    "lines": [
+      "CC19",
+      "DT9"
+    ],
+    "en": "Botanic Gardens• Kebun Bunga",
+    "zh": "植物园",
+    "ta": "பூ மலை",
+    "abbr": "BTN"
+  },
+  {
+    "lines": [
+      "CC20"
+    ],
+    "en": "Farrer Road",
+    "zh": "花拉路",
+    "ta": "ஃபேரர் சாலை",
+    "abbr": "FRR"
+  },
+  {
+    "lines": [
+      "CC21"
+    ],
+    "en": "Holland Village",
+    "zh": "荷兰村",
+    "ta": "ஹாலந்து வில்லேஜ்",
+    "abbr": "HLV"
+  },
+  {
+    "lines": [
+      "CC22",
+      "EW21"
+    ],
+    "en": "Buona Vista",
+    "zh": "波那维斯达",
+    "ta": "புவன விஸ்தா",
+    "abbr": "BNV"
+  },
+  {
+    "lines": [
+      "CC23"
+    ],
+    "en": "one-north",
+    "zh": "纬壹",
+    "ta": "ஒன்-நார்த்",
+    "abbr": "ONH"
+  },
+  {
+    "lines": [
+      "CC24"
+    ],
+    "en": "Kent Ridge",
+    "zh": "肯特岗",
+    "ta": "கெண்ட் ரிஜ்",
+    "abbr": "KRG"
+  },
+  {
+    "lines": [
+      "CC25"
+    ],
+    "en": "Haw Par Villa",
+    "zh": "虎豹别墅",
+    "ta": "ஹா பர் வில்லா",
+    "abbr": "HPV"
+  },
+  {
+    "lines": [
+      "CC26"
+    ],
+    "en": "Pasir Panjang",
+    "zh": "巴西班让",
+    "ta": "பாசிர் பாஞ்சாங்",
+    "abbr": "PPJ"
+  },
+  {
+    "lines": [
+      "CC27"
+    ],
+    "en": "Labrador Park",
+    "zh": "拉柏多公园",
+    "ta": "லாப்ரடார் பூங்கா",
+    "abbr": "LBD"
+  },
+  {
+    "lines": [
+      "CC28"
+    ],
+    "en": "Telok Blangah",
+    "zh": "直落布兰雅",
+    "ta": "தெலுக் பிளாங்கா",
+    "abbr": "TLB"
+  },
+  {
+    "lines": [
+      "CC29",
+      "NE1"
+    ],
+    "en": "HarbourFront",
+    "zh": "港湾",
+    "ta": "துறைமுகம்",
+    "abbr": "HBF"
+  },
+  {
+    "lines": [
+      "CE1",
+      "DT16"
+    ],
+    "en": "Bayfront",
+    "zh": "海湾舫",
+    "ta": "பேஃபிரண்ட்",
+    "abbr": "BFT"
+  },
+  {
+    "lines": [
+      "CE2",
+      "NS27"
+    ],
+    "en": "Marina Bay",
+    "zh": "滨海湾",
+    "ta": "மரீனா பே",
+    "abbr": "MRB"
+  },
+  {
+    "lines": [
+      "DT1",
+      "BP6"
+    ],
+    "en": "Bukit Panjang",
+    "zh": "武吉班让",
+    "ta": "புக்கிட் பாஞ்சாங்",
+    "abbr": "BPJ"
+  },
+  {
+    "lines": [
+      "DT2"
+    ],
+    "en": "Cashew",
+    "zh": "凯秀",
+    "ta": "கேஷ்யூ",
+    "abbr": "CSW"
+  },
+  {
+    "lines": [
+      "DT3"
+    ],
+    "en": "Hillview",
+    "zh": "山景",
+    "ta": "ஹில்வியூ",
+    "abbr": "HVW"
+  },
+  {
+    "lines": [
+      "DT5"
+    ],
+    "en": "Beauty World",
+    "zh": "美世界",
+    "ta": "பியூட்டி வோர்ல்ட்",
+    "abbr": "BTW"
+  },
+  {
+    "lines": [
+      "DT6"
+    ],
+    "en": "King Albert Park",
+    "zh": "阿尔柏王园",
+    "ta": "கிங் ஆல்பர்ட் பார்க்",
+    "abbr": "KAP"
+  },
+  {
+    "lines": [
+      "DT7"
+    ],
+    "en": "Sixth Avenue",
+    "zh": "第六道",
+    "ta": "சிக்ஸ்த் அவென்யூ",
+    "abbr": "SAV"
+  },
+  {
+    "lines": [
+      "DT8"
+    ],
+    "en": "Tan Kah Kee",
+    "zh": "陈嘉庚",
+    "ta": "டான் கா கீ",
+    "abbr": "TKK"
+  },
+  {
+    "lines": [
+      "DT9",
+      "CC19"
+    ],
+    "en": "Botanic Gardens• Kebun Bunga",
+    "zh": "植物园",
+    "ta": "பூ மலை",
+    "abbr": "BTN"
+  },
+  {
+    "lines": [
+      "DT10"
+    ],
+    "en": "Stevens",
+    "zh": "史蒂芬",
+    "ta": "ஸ்டீவன்ஸ்",
+    "abbr": "STV"
+  },
+  {
+    "lines": [
+      "DT11",
+      "NS21"
+    ],
+    "en": "Newton",
+    "zh": "纽顿",
+    "ta": "நியூட்டன்",
+    "abbr": "NEW"
+  },
+  {
+    "lines": [
+      "DT12",
+      "NE7"
+    ],
+    "en": "Little India",
+    "zh": "小印度",
+    "ta": "லிட்டில் இந்தியா",
+    "abbr": "LTI"
+  },
+  {
+    "lines": [
+      "DT13"
+    ],
+    "en": "Rochor",
+    "zh": "梧槽",
+    "ta": "ரோச்சோர்",
+    "abbr": "RCR"
+  },
+  {
+    "lines": [
+      "DT14",
+      "EW12"
+    ],
+    "en": "Bugis",
+    "zh": "武吉士",
+    "ta": "பூகிஸ்",
+    "abbr": "BGS"
+  },
+  {
+    "lines": [
+      "DT15",
+      "CC4"
+    ],
+    "en": "Promenade",
+    "zh": "宝门廊",
+    "ta": "புரொமனாட்",
+    "abbr": "PMN"
+  },
+  {
+    "lines": [
+      "DT16",
+      "CE1"
+    ],
+    "en": "Bayfront",
+    "zh": "海湾舫",
+    "ta": "பேஃபிரண்ட்",
+    "abbr": "BFT"
+  },
+  {
+    "lines": [
+      "DT17"
+    ],
+    "en": "Downtown",
+    "zh": "市中心",
+    "ta": "டௌன்டவுன்",
+    "abbr": "DTN"
+  },
+  {
+    "lines": [
+      "DT18"
+    ],
+    "en": "Telok Ayer",
+    "zh": "直落亚逸",
+    "ta": "தெலுக் ஆயர்",
+    "abbr": "TLA"
+  },
+  {
+    "lines": [
+      "DT19",
+      "NE4"
+    ],
+    "en": "Chinatown",
+    "zh": "牛车水",
+    "ta": "சைனாடவுன்",
+    "abbr": "CNT"
+  },
+  {
+    "lines": [
+      "DT20"
+    ],
+    "en": "Fort Canning",
+    "zh": "福康宁",
+    "ta": "ஃபோர்ட் கெனிங்",
+    "abbr": "FCN"
+  },
+  {
+    "lines": [
+      "DT21"
+    ],
+    "en": "Bencoolen",
+    "zh": "明古连",
+    "ta": "பென்கூலன்",
+    "abbr": "BCL"
+  },
+  {
+    "lines": [
+      "DT22"
+    ],
+    "en": "Jalan Besar",
+    "zh": "惹兰勿刹",
+    "ta": "ஜாலான் புசார்",
+    "abbr": "JLB"
+  },
+  {
+    "lines": [
+      "DT23"
+    ],
+    "en": "Bendemeer",
+    "zh": "明地迷亚",
+    "ta": "பெண்டிமியர்",
+    "abbr": "BDM"
+  },
+  {
+    "lines": [
+      "DT24"
+    ],
+    "en": "Geylang Bahru",
+    "zh": "芽笼峇鲁",
+    "ta": "கேலாங் பாரு",
+    "abbr": "GLB"
+  },
+  {
+    "lines": [
+      "DT25"
+    ],
+    "en": "Mattar",
+    "zh": "玛达",
+    "ta": "மாத்தார்",
+    "abbr": "MTR"
+  },
+  {
+    "lines": [
+      "DT26",
+      "CC10"
+    ],
+    "en": "MacPherson",
+    "zh": "麦波申",
+    "ta": "மெக்பர்சன்",
+    "abbr": "MPS"
+  },
+  {
+    "lines": [
+      "DT27"
+    ],
+    "en": "Ubi",
+    "zh": "乌美",
+    "ta": "உபி",
+    "abbr": "UBI"
+  },
+  {
+    "lines": [
+      "DT28"
+    ],
+    "en": "Kaki Bukit",
+    "zh": "加基武吉",
+    "ta": "காக்கி புக்கிட்",
+    "abbr": "KKB"
+  },
+  {
+    "lines": [
+      "DT29"
+    ],
+    "en": "Bedok North",
+    "zh": "勿洛北",
+    "ta": "பிடோக் நார்த்",
+    "abbr": "BDN"
+  },
+  {
+    "lines": [
+      "DT30"
+    ],
+    "en": "Bedok Reservoir",
+    "zh": "勿洛蓄水池",
+    "ta": "பிடோக் ரெசவோர்",
+    "abbr": "BDR"
+  },
+  {
+    "lines": [
+      "DT31"
+    ],
+    "en": "Tampines West",
+    "zh": "淡滨尼西",
+    "ta": "தெம்பினிஸ் வெஸ்ட்",
+    "abbr": "TPW"
+  },
+  {
+    "lines": [
+      "DT32",
+      "EW2"
+    ],
+    "en": "Tampines",
+    "zh": "淡滨尼",
+    "ta": "தெம்பினிஸ்",
+    "abbr": "TAM"
+  },
+  {
+    "lines": [
+      "DT33"
+    ],
+    "en": "Tampines East",
+    "zh": "淡滨尼东",
+    "ta": "தெம்பினிஸ் ஈஸ்ட்",
+    "abbr": "TPE"
+  },
+  {
+    "lines": [
+      "DT34"
+    ],
+    "en": "Upper Changi",
+    "zh": "樟宜上段",
+    "ta": "அப்பர் சாங்கி",
+    "abbr": "UPC"
+  },
+  {
+    "lines": [
+      "DT35",
+      "CG1"
+    ],
+    "en": "Expo",
+    "zh": "博览",
+    "ta": "எக்ஸ்போ",
+    "abbr": "XPO"
+  },
+  {
+    "lines": [
+      "NS9"
+    ],
+    "en": "Woodlands",
+    "zh": "兀兰",
+    "ta": "ஊட்லண்ட்ஸ்",
+    "abbr": "WDL"
+  },
+  {
+    "lines": [
+      "CC17"
+    ],
+    "en": "Caldecott",
+    "zh": "加利谷",
+    "ta": "கால்டிகாட்",
+    "abbr": "CDT"
+  },
+  {
+    "lines": [
+      "DT10"
+    ],
+    "en": "Stevens",
+    "zh": "史蒂芬",
+    "ta": "ஸ்டீவன்ஸ்",
+    "abbr": "STV"
+  },
+  {
+    "lines": [
+      "NS22"
+    ],
+    "en": "Orchard",
+    "zh": "乌节",
+    "ta": "ஆர்ச்சர்ட்",
+    "abbr": "ORC"
+  },
+  {
+    "lines": [
+      "EW16",
+      "NE3"
+    ],
+    "en": "Outram Park",
+    "zh": "欧南园",
+    "ta": "ஊட்ரம் பார்க்",
+    "abbr": "OTP"
+  },
+  {
+    "lines": [
+      "NS27",
+      "CE2"
+    ],
+    "en": "Marina Bay",
+    "zh": "滨海湾",
+    "ta": "மரீனா பே",
+    "abbr": "MRB"
+  },
+  {
+    "lines": [
+      "CG2"
+    ],
+    "en": "Changi Airport",
+    "zh": "樟宜机场",
+    "ta": "சாங்கி விமானநிலையம்",
+    "abbr": "CGA"
+  },
+  {
+    "lines": [
+      "CG1",
+      "DT35"
+    ],
+    "en": "Expo",
+    "zh": "博览",
+    "ta": "எக்ஸ்போ",
+    "abbr": "XPO"
+  },
+  {
+    "lines": [
+      "EW4",
+      "CG"
+    ],
+    "en": "Tanah Merah",
+    "zh": "丹那美拉",
+    "ta": "தானா மேரா",
+    "abbr": "TNM"
+  },
+  {
+    "lines": [
+      "NS4",
+      "BP1"
+    ],
+    "en": "Choa Chu Kang",
+    "zh": "蔡厝港",
+    "ta": "சுவா சூ காங்",
+    "abbr": "CCK"
+  },
+  {
+    "lines": [
+      "EW27"
+    ],
+    "en": "Boon Lay",
+    "zh": "文礼",
+    "ta": "பூன் லே",
+    "abbr": "BNL"
+  },
+  {
+    "lines": [
+      "NS1",
+      "EW24"
+    ],
+    "en": "Jurong East",
+    "zh": "裕廊东",
+    "ta": "ஜூரோங் கிழக்கு",
+    "abbr": "JUR"
+  },
+  {
+    "lines": [
+      "EW1"
+    ],
+    "en": "Pasir Ris",
+    "zh": "巴西立",
+    "ta": "பாசிர் ரிஸ்",
+    "abbr": "PSR"
+  },
+  {
+    "lines": [
+      "NE14"
+    ],
+    "en": "Hougang",
+    "zh": "后港",
+    "ta": "ஹவ்காங்",
+    "abbr": "HGN"
+  },
+  {
+    "lines": [
+      "NS16"
+    ],
+    "en": "Ang Mo Kio",
+    "zh": "宏茂桥",
+    "ta": "அங் மோ கியோ",
+    "abbr": "AMK"
+  }
+]
