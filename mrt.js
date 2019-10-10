@@ -36,7 +36,7 @@ for (var stationId in allStations) {
 
 for (var lineCode in allLines) {
   const stationIds = allLines[lineCode]
-  lines.push({id: lineCode, name: "", stations: stationIds})
+  lines.push({id: lineCode, name: "", stations: stationIds.flatMap(function(x) { return x } )})
 }
 
 function compareById( a, b ) {
@@ -67,5 +67,5 @@ function parseLineStation(code, station) {
   if (!allLines[lineCode]) {
     allLines[lineCode] = []
   }
-  allLines[lineCode][parseInt(stationNumber)] = station.abbr
+  allLines[lineCode][stationNumber] = code
 }
