@@ -111,9 +111,7 @@ struct GraphEdgeSummary {
             graphEdge.line == self.line &&
             graphEdge.from == self.end
         else {
-                print("Attempt to add: \(graphEdge) to \(self)")
-//                preconditionFailure("Error: cannot add this edge to the summary")
-            return self
+            preconditionFailure("Attempt to add: \(graphEdge) to \(self)")
         }
         return GraphEdgeSummary(
             start: self.start,
@@ -169,8 +167,6 @@ extension Sequence where Element == GraphEdge {
     }
 }
 
-
-
 do {
     let url = Bundle.main.url(forResource: "mrt", withExtension: "json")
     let data = try url
@@ -207,11 +203,9 @@ do {
     
     func findRoute(from start: MRTStation, to destination: MRTStation) -> [GraphEdge]? {
         let visited: [StationLine] = start.lines
-        let q: [[GraphEdge]] = start.lines
-            .map { stationLine in
-                return graph.filter { $0.from == stationLine && $0.line != nil }
-            }
-            .compactMap { $0 }
+        let q: [[GraphEdge]] = graph
+            .filter { start.lines.contains($0.from) && $0.line != nil }
+            .map { [$0] }
         return breadthFirstSearch(
             queue: q,
             visited: visited,
@@ -268,9 +262,9 @@ do {
         let route = findRoute(from: start, to: destination)
     {
         let squashedRoute = squashRoute(route)
-        print("Found!: " + route.routeDescription)
+        print("Found Route!")
+        print(squashedRoute.routeDescription)
     }
-    
 } catch {
     print(error)
 }
