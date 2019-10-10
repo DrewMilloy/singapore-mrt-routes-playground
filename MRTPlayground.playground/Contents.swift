@@ -61,6 +61,12 @@ struct MRTLine: Decodable {
     var stations: [StationLine]
 }
 
+extension MRTLine: Equatable {
+    static func ==(lhs: MRTLine, rhs: MRTLine) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
 extension MRTLine: CustomDebugStringConvertible {
     var debugDescription: String {
         return self.name
@@ -80,6 +86,44 @@ struct GraphEdge {
     var line: MRTLine? // if nil, it's a line change
 }
 
+struct GraphEdgeSummary {
+    var start: StationLine
+    var end: StationLine
+    var line: MRTLine? // if nil, it's a line change
+    var stops: Int
+    
+    init(graphEdge: GraphEdge) {
+        start = graphEdge.from
+        end = graphEdge.to
+        line = graphEdge.line
+        stops = line == nil ? 0 : 1
+    }
+    
+    init(start: StationLine, end: StationLine, line: MRTLine?, stops: Int) {
+        self.start = start
+        self.end = end
+        self.line = line
+        self.stops = stops
+    }
+
+    func add(graphEdge: GraphEdge) -> GraphEdgeSummary {
+        guard
+            graphEdge.line == self.line &&
+            graphEdge.from == self.end
+        else {
+                print("Attempt to add: \(graphEdge) to \(self)")
+//                preconditionFailure("Error: cannot add this edge to the summary")
+            return self
+        }
+        return GraphEdgeSummary(
+            start: self.start,
+            end: graphEdge.to,
+            line: self.line,
+            stops: self.stops + 1)
+    }
+
+}
+
 var stationIdLookup: [StationId: MRTStation] = [:]
 var stationLookup: [StationLine: MRTStation] = [:]
 var lineLookup: [StationLine: MRTLine] = [:]
@@ -93,16 +137,39 @@ extension StationLine {
     }
 }
 
-extension Sequence where Element == GraphEdge {
+extension Sequence where Element == GraphEdgeSummary {
     var routeDescription: String {
-        return Array(self.map { edge in
-            guard let line = edge.line else {
-                return "Change Lines"
-            }
-            return "\(edge.from.stopDescription) to \(edge.to.stopDescription) on \(line.name)"
-        }).joined(separator: "\n")
+        return Array(self.map { $0.debugDescription })
+            .joined(separator: "\n")
     }
 }
+
+extension GraphEdgeSummary: CustomDebugStringConvertible {
+    var debugDescription: String {
+        guard let line = self.line else {
+            return "Change Lines"
+        }
+        return "\(self.start.stopDescription) to \(self.end.stopDescription) on \(line.name) - \(self.stops) Stop(s)"
+    }
+}
+
+extension GraphEdge: CustomDebugStringConvertible {
+    var debugDescription: String {
+        guard let line = self.line else {
+            return "Change"
+        }
+        return "\(self.from)->\(self.to) (\(line.id))"
+    }
+}
+
+extension Sequence where Element == GraphEdge {
+    var routeDescription: String {
+        return Array(self.map { $0.debugDescription })
+            .joined(separator: ", ")
+    }
+}
+
+
 
 do {
     let url = Bundle.main.url(forResource: "mrt", withExtension: "json")
@@ -139,30 +206,60 @@ do {
     }
     
     func findRoute(from start: MRTStation, to destination: MRTStation) -> [GraphEdge]? {
-        var visited: [StationLine] = []
-        var q = Queue<[GraphEdge]>()
-        start.lines.forEach { stationLine in
-            visited.append(stationLine)
-            graph
-                .filter { $0.from == stationLine }
-                .forEach { q.enQueue(item: [$0]) }
-        }
-        while let graphPath = q.deQueue() {
-            guard let lastEdge = graphPath.last else {
-                fatalError("Path cannot be empty")
+        let visited: [StationLine] = start.lines
+        let q: [[GraphEdge]] = start.lines
+            .map { stationLine in
+                return graph.filter { $0.from == stationLine && $0.line != nil }
             }
-            if stationLookup[lastEdge.to] == destination {
-                return graphPath
-            }
-            graph
-                .filter { $0.from == lastEdge.to }
-                .filter { !visited.contains($0.from) }
-                .forEach { edge in
-                    visited.append(edge.from)
-                    q.enQueue(item: graphPath + [edge])
-                }
+            .compactMap { $0 }
+        return breadthFirstSearch(
+            queue: q,
+            visited: visited,
+            destinations: destination.lines)
+    }
+    
+    func breadthFirstSearch(
+        queue: [[GraphEdge]],
+        visited: [StationLine],
+        destinations: [StationLine],
+        level: Int = 0) -> [GraphEdge]?
+    {
+        guard let graphPath = queue.first else {
+            return nil
         }
-        return nil
+        guard let lastEdge = graphPath.last else {
+            fatalError("Path cannot be empty")
+        }
+        if destinations.contains(lastEdge.to) {
+            return graphPath
+        }
+        let filteredEdges = graph
+            .filter { $0.from == lastEdge.to }
+            .filter { !visited.contains($0.from) }
+        let newVisited = visited + filteredEdges.map { $0.from }
+        let newQueue = queue.dropFirst() + filteredEdges.map { graphPath + [$0] }
+        return breadthFirstSearch(
+            queue: Array(newQueue),
+            visited: newVisited,
+            destinations: destinations,
+            level: level + 1)
+    }
+    
+    func squashRoute(_ route: [GraphEdge]) -> [GraphEdgeSummary] {
+        let initialValue: [GraphEdgeSummary] = []
+        return route.reduce(initialValue, { accumulator, element in
+            guard
+                let lastEntry = accumulator.last
+            else {
+                return [GraphEdgeSummary(graphEdge: element)]
+            }
+            if lastEntry.line == element.line {
+                return accumulator.dropLast()
+                    + [lastEntry.add(graphEdge: element)]
+            } else {
+                return accumulator + [GraphEdgeSummary(graphEdge: element)]
+            }
+        })
     }
     
     if
@@ -170,6 +267,7 @@ do {
         let destination = stationIdLookup["BNK"],
         let route = findRoute(from: start, to: destination)
     {
+        let squashedRoute = squashRoute(route)
         print("Found!: " + route.routeDescription)
     }
     
