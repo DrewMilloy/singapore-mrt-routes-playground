@@ -78,6 +78,18 @@ struct MRTFile: Decodable {
     var lines: [MRTLine]
 }
 
+extension MRTFile {
+    static func load() throws -> MRTFile {
+        let url = Bundle.main.url(forResource: "mrt", withExtension: "json")
+        let data = try url
+            .flatMap { try Data(contentsOf: $0) }
+        let jsonDecoder = JSONDecoder()
+        let file = try data
+            .flatMap { try jsonDecoder.decode(self, from: $0) }
+        return file!
+    }
+}
+
 // # Internal Model
 
 struct GraphEdge {
@@ -122,6 +134,23 @@ struct GraphEdgeSummary {
 
 }
 
+extension GraphEdgeSummary {
+    var finalDestination: StationLine? {
+        guard
+            let stations = self.line?.stations,
+            let startPosition = stations.firstIndex(of: start),
+            let endPosition = stations.firstIndex(of: end)
+        else {
+            return nil
+        }
+        if startPosition < endPosition {
+            return stations.last
+        } else {
+            return stations.first
+        }
+    }
+}
+
 var stationIdLookup: [StationId: MRTStation] = [:]
 var stationLookup: [StationLine: MRTStation] = [:]
 var lineLookup: [StationLine: MRTLine] = [:]
@@ -131,7 +160,7 @@ extension StationLine {
         guard let station = stationLookup[self] else {
             return self
         }
-        return "\(self) (\(station.name))"
+        return "\(station.name) (\(self))"
     }
 }
 
@@ -147,7 +176,17 @@ extension GraphEdgeSummary: CustomDebugStringConvertible {
         guard let line = self.line else {
             return "Change Lines"
         }
-        return "\(self.start.stopDescription) to \(self.end.stopDescription) on \(line.name) - \(self.stops) Stop(s)"
+        return "\(self.start.stopDescription) to \(self.end.stopDescription) on \(line.name)\(destinationDescription) - \(self.stops) Stop(s)"
+    }
+    
+    private var destinationDescription: String {
+        guard
+            let finalDestination = self.finalDestination,
+            finalDestination != end
+        else {
+            return ""
+        }
+        return " - towards \(finalDestination.stopDescription)"
     }
 }
 
@@ -168,12 +207,9 @@ extension Sequence where Element == GraphEdge {
 }
 
 do {
-    let url = Bundle.main.url(forResource: "mrt", withExtension: "json")
-    let data = try url
-        .flatMap { try Data(contentsOf: $0) }
-    let jsonDecoder = JSONDecoder()
-    let file: MRTFile! = try data
-            .flatMap { try jsonDecoder.decode(MRTFile.self, from: $0) }
+    let file = try MRTFile.load()
+    
+    // # Prepare helper structures
     
     var graph: [GraphEdge] = []
 
@@ -190,6 +226,8 @@ do {
     }
 
     file.stations.forEach { station in
+        print("\(station.id) - \(station.name.en)")
+        
         stationIdLookup[station.id] = station
         station.lines.forEach { stationLookup[$0] = station }
         
@@ -200,6 +238,8 @@ do {
                 graph.append(GraphEdge(from: pair.1, to: pair.0, line: nil))
             }
     }
+    
+    // # Route-finding function
     
     func findRoute(from start: MRTStation, to destination: MRTStation) -> [GraphEdge]? {
         let visited: [StationLine] = start.lines
@@ -257,8 +297,8 @@ do {
     }
     
     if
-        let start = stationIdLookup["BFT"],
-        let destination = stationIdLookup["BNK"],
+        let start = stationIdLookup["KRG"],
+        let destination = stationIdLookup["CGA"],
         let route = findRoute(from: start, to: destination)
     {
         let squashedRoute = squashRoute(route)
